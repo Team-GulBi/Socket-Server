@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  socket-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5680:5680"
+    volumes:
+      - .:/app  # 로컬과 컨테이너의 코드 동기화
+    environment:
+      - POETRY_VIRTUALENVS_CREATE=false  # 가상 환경을 생성하지 않도록 설정

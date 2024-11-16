@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "socket-server"
+version = "0.1.0"
+description = ""
+authors = ["Jinwoo Kim <99790907+jinu0328@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.63"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
